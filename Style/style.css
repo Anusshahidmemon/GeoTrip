@@ -1,0 +1,74 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family:  sans-serif;
+    box-sizing: border-box;
+}
+
+.dropdown:hover .dropdown-menu {
+   display: block;
+    margin-top: 0; /* remove the gap so it doesn't close */
+   
+}
+.dropdown:hover .nav-link {
+    color: rgb(179, 0, 0);
+}
+.nav-link{
+    font-weight: 600;
+    font-size: 14px;
+}
+.dropdown-menu{
+    border: none;
+    border-radius: 10px;
+    width: 20vw;
+    font-size: 14px;
+}
+.dropdown-item:hover{
+    background-color: transparent;
+    padding-left: 25px;
+   
+}
+.dropdown-divider{
+    width: 90%;
+   margin-left: auto;
+   margin-right: auto;
+}
+#home-flight{
+    font-size: 30px;
+    background-color: rgba(114, 114, 223, 0.13);
+    color: red;
+    
+}
+.flight-description{
+    font-size: 12px;
+    margin-top: -20px;
+    color: rgb(94, 94, 94);
+    letter-spacing: 0.5px;
+}
+.dropdown-item {
+    font-size: 14px;
+
+
+}
+.cards p{
+    margin-top: 5px;
+   line-height: 18px;
+}
+
+
+.cards{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 18vw;
+    margin-top: 10px;
+}
+.cards:hover{
+    border-radius: 10px ;
+    box-shadow: 2px 2px 4px #007bff34 !important;
+    padding-left: 16px;
+
+}
+
+.menu{
+    width: 25vw;
+}
