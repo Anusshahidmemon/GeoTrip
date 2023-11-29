@@ -3,17 +3,20 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GeoTrip</title>
     <!-- cdn link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!-- style page link -->
 <link rel="stylesheet" href="Style/style.css">
-        <!-- icons link bootstrap -->
+<!-- icon link font asewome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- icons link bootstrap -->
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
   </head>
   <body>
    <!-- navbar section -->
     
-   <nav class="navbar navbar-expand-lg bg-body-tertiary">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="images/nav-logo.png" width="135vw" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,7 +61,7 @@
                 </ul>
               </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Link
             </a>
             <ul class="dropdown-menu ">
@@ -69,7 +72,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown ">
-            <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
              Menu
             </a>
             <ul class="dropdown-menu meun">
@@ -85,21 +88,371 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Docs</a>
+            <a class="nav-link active" href="#">Docs</a>
           </li>
   
         </ul>
-       
+        <ul class="navbar-nav mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active me-2" id="nav-link" aria-current="page" href="#"> INR</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active me-2" id="nav-link" href="#"><img src="images/india-flag-navbar.jpg" width="20px
+              " height="20px" alt=""></a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-danger btn-lg"><i class="fa-regular fa-circle-user me-2"></i>Sign in / Register</button>
+          </li>
+        </ul>
       </div>
     </div>
   </nav>
+  <!-- navbar section end -->
+  <!-- hero section -->
+  
+  <div class="container-fluid">
+<div class="row">
+<div class="col-12" id="hero-section">
+  <div class="hero-section-img">
+<img src="images/hero-sec-image.jpg" class="img-fluid w-100"   alt="">
+  </div>
+  <div class="hero-section-content">
+    <h1 class="text-center text-white">Starts Your Trip with GeoTrip</h1>
+    <p class="text-center text-white">Take a little break from the work strss of everyday. Discover plan trip and explore beautiful destinations.</p>
+  </div>
+<div class="hero-section-booking">
+<div class="container" id="hero-sec-booking-container">
+  <div class="row">
+    <div class="col-md-7 col-sm-12 col-12 mb-2 "><div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Return</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">One Way</label>
+    </div>
+  </div>
+  <div class="col-md col-sm-8 col-8 mb-2 ">
+    <select class="form-select form-select-sm d-inline" aria-label="Small select example">
+      <option selected>1 Adults</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  <div class="col-md col-sm-9 col-9 mb-2 ">
+    <select class="form-select form-select-sm d-inline"  aria-label="Small select example">
+      <option selected> Premium Econnomy</option>
+      <option value="1">One</option>
+      <option value="2">Two</option>
+      <option value="3">Three</option>
+    </select>
+  </div>
+  </div>
+
+<div class="row ">
+
+<div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-2">
+  <!--  -->
+  <div class="dropdown">
+    <input type="text" class="form-control dropdown pt-3 pb-3" placeholder="Leaving From " data-toggle="dropdown">
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+</div>
+<div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-2">
+  <!--  -->
+  <div class="dropdown">
+    <input type="text" class="form-control dropdown pt-3 pb-3" placeholder="Going To" data-toggle="dropdown">
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#">Action</a></li>
+      <li><a class="dropdown-item" href="#">Another action</a></li>
+      <li><a class="dropdown-item" href="#">Something else here</a></li>
+    </ul>
+  </div>
+</div>
+
+<div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-2" id="date">
+  <input type="datetime-local" name="entry_date" id="" placeholder="Depature date" value="Depature date" class="form-control pt-3 pb-3">
+</div>
+<div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3" id="date">
+  <input type="datetime-local" name="entry_date" id="" placeholder="Depature date" value="Depature date" class="form-control pt-3 pb-3">
+</div>
+<div class="col-lg-2 col-12 d-grid mb-2" id="hero-search-btn">
+  <button type="button" class="btn btn-danger btn-lg pt-3 pb-3 ps-lg-5 pe-lg-5">Search</button>
+</div>
 
 
 
+</div>
 
 
- <!-- navbar section end -->
+</div>
 
+
+</div>
+
+</div>
+   
+   
+   
+   
+  
+</div>
+  </div>
+  <!-- hero section end -->
+<!-- sec-1 -->
+  <section class="sec-1">
+
+<div class="container mt-5 mb-5 pb-3">
+
+  <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/dollar-sign.jpg" width="70px" height="60px" class="" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Easy Booking</h4>
+          <p class="card-text">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/umberalla.png" width="45px" height="60px" class="" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Best Destinations</h4>
+          <p class="card-text">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/person.jpg" width="50px" height="60px" class="" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Travels Guides</h4>
+          <p class="card-text">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/friend.png" width="80px" height="60px" class="" alt="...">
+        <div class="card-body">
+          <h4 class="card-title">Friendly Support</h4>
+          <p class="card-text">Cicero famously orated against his political opponent Lucius Sergius Catilina. Occasionally the first Oration against Catiline.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!-- sec-1 end -->
+<hr>
+<!-- sec-2  -->
+
+<section class="popular-destination">
+<div class="container">
+  <div class="row mt-5 pt-5 ">
+    <div class="col-12">
+      <h3 class="text-center">Explore Popular Destination</h3>
+      <p class="text-center">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+    </div>
+  </div>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center mt-2 mb-5 pb-5">
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/New York.png" class="img-fluid" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">New York</h5>
+          <p class="card-text">10 Destinations | 5 Hotels</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/Las Vegas.png" class="img-fluid" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Las Vegas</h5>
+          <p class="card-text">6 Destinations | 14 Hotels</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/San Antonio.png" class="img-fluid" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">San Antonio</h5>
+          <p class="card-text">9 Destinations | 16 Hotels</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <img src="images/houston.png" class="img-fluid" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">Houston</h5>
+          <p class="card-text">7 Destinations | 18 Hotels</p>
+        </div>
+      </div>
+    </div>
+   
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/san francisco.png" class="img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">San Francisco</h5>
+            <p class="card-text">4 Destinations | 12 Hotels</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Nashville.png" class="img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Nashville</h5>
+            <p class="card-text">16 Destinations | 7 Hotels</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Philadelphia.png" class="img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">Philadelphia</h5>
+            <p class="card-text">14 Destinations | 10 Hotels</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/San Diego.png" class="img-fluid" alt="...">
+          <div class="card-body text-center">
+            <h5 class="card-title">San Diego</h5>
+            <p class="card-text">12 Destinations | 32 Hotels</p>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  
+  
+  
+  
+</div>
+</section>
+<!-- sec-2 end -->
+
+<!-- sec-3 -->
+
+<section class="popular-route">
+
+  
+  <div class="container pb-3">
+
+    <div class="row pt-5">
+      <div class="col-12 mt-5">
+        <h3 class="text-center">Explore Popular Route</h3>
+        <p class="text-center">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+      </div>
+    </div>
+    
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center mt-2 mb-5">
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/New York to Los.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">New York <i class="bi bi-arrow-left-right"></i> Los Angles</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+            <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/San Diego to San jose.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">San Diego <i class="bi bi-arrow-left-right"></i> San Jose</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Dallas to phila.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Dallas <i class="bi bi-arrow-left-right"></i> Philadelphia</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Denver to Nash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Denver <i class="bi bi-arrow-left-right"></i> Nashville</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Chicago to San Fran.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Chicago <i class="bi bi-arrow-left-right"></i> San Francisco</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Houston to Los.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Houston <i class="bi bi-arrow-left-right"></i> Los Angles</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Antonio to columbus.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Antonio <i class="bi bi-arrow-left-right"></i> columbus</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card h-100">
+          <img src="images/Angles to Canada.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Los Angles <i class="bi bi-arrow-left-right"></i> Canada</h5>
+            <p class="card-text"><small class="text-body-secondary">Round-trip | 3 days</small></p>
+             <p class="card-text text-end"><small class="text-body-secondary">From </small><big class="text-dark">US$492</big></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+<div class="row pb-5">
+  <div class="col-12 text-center">
+    <button class="btn btn-outline-danger ps-5 pe-5 btn-lg">Explore More <i class="bi bi-graph-up-arrow ps-2"></i></button>
+  </div>
+</div>
+
+  </div>
+  
+</section>
+<!-- sec-3 end -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
