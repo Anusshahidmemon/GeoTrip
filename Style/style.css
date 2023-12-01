@@ -2,11 +2,17 @@
    
     font-family:  sans-serif !important;
     box-sizing: border-box !important;
+
 }
+
 /* navbar lg*/
-.dropdown:hover .dropdown-menu {
+.navbar{
+    background-color: white !important;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.158);
+}
+.navbar .dropdown:hover .dropdown-menu {
    display: block;
-    margin-top: 0; /* remove the gap so it doesn't close */
+    margin-top: 0px; /* remove the gap so it doesn't close */
    
 }
 .nav-link{
@@ -25,10 +31,11 @@
 .dropdown-menu{
     border: none;
     border-radius: 10px;
-    width: 20vw;
+    width: 16rem;
+   
     font-size: 14px;
 }
-.dropdown-item:hover{
+.navbar .dropdown-item:hover{
     background-color: transparent;
     padding-left: 25px;
    
@@ -64,13 +71,13 @@
 .cards{
     margin-left: 10px;
     margin-right: 10px;
-    width: 18vw;
+    width: 14rem;
     margin-top: 10px;;
 }
 .cards:hover{
     border-radius: 10px ;
     box-shadow: 2px 2px 4px #007bff34 !important;
-    padding-left: 16px;
+    padding-left: 16px !important;
 
 }
 
@@ -92,8 +99,9 @@
    
 }
 .btn-lg i{
-    font-size: 18px;
+    font-size: 16px;
 }
+
 /* navbar lg end */
 
 /* hero-sec */
@@ -166,6 +174,30 @@
     }
 }
 /* hero-sec-responsiveness-end */
+.hero-section-booking input:focus, select:focus{
+outline: none;
+box-shadow: none !important;
+
+}
+.hero-section-booking input:focus, select:focus{
+    outline: none;
+    box-shadow: none !important;
+    border-color: #cd2c22;
+    
+    }
+    #hero-section-adults-member:focus{
+        border-color:#cd2c22 !important ;
+    }
+    #hero-section-premium-member:focus{
+        border-color:#cd2c22 !important ;
+    }
+    /* #hero-section-premium-member option:hover{
+        background-color: #cd2c22 !important;
+
+    } */
+    .hero-section-booking .dropdown:focus+.dropdown-menu{
+        display: block;
+    }
 .hero-section-content h1{
     font-weight: bolder;
     font-family: sans-serif !important;
@@ -231,6 +263,10 @@ input[type="datetime-local"]:before {
         padding-top: 20px;
         padding-bottom: 10px;
         border-radius: 10px;
+    }
+    #hero-search-btn i{
+        font-size: 14px;
+        font-weight: bolder !important;
     }
     /* hero-sec end */
     /* section 1 */
@@ -318,3 +354,357 @@ input[type="datetime-local"]:before {
    
 } */
    /* section-3 end */
+
+/* section 4 */
+#rating-page-container{
+    overflow-x: hidden;
+}
+
+.Rating-page .rating-page-img-sec img{
+    height: 80vh !important;
+    border-radius: 10px;
+  
+}
+.Rating-page .rating-page-card-sec{
+    position: relative;
+    top: 450px;
+    left: 100px;
+
+}
+@media only screen and (max-width:991px){
+    .Rating-page .rating-page-card-sec{
+        position: relative;
+        top: 450px;
+        left: 170px;
+    
+    }
+
+}
+@media only screen and (max-width:767px){
+    .Rating-page .rating-page-card-sec{
+        position: relative;
+         top: 450px;
+        left: 90px;
+    
+    }
+   
+
+}
+@media only screen and (max-width:575px){
+    .Rating-page .rating-page-card-sec{
+        position: relative;
+        top: 450px;
+        left: 100px;
+    
+    }
+   
+
+}
+@media only screen and (max-width:500px){
+    .Rating-page .rating-page-card-sec{
+        position: relative;
+      
+        left: 60px;
+    
+    }
+   
+
+}
+@media only screen and (max-width:400px){
+    .Rating-page .rating-page-card-sec{
+        position: relative;
+        
+        left: 30px;
+    
+    }
+   
+
+}
+@media only screen and (max-width:300px){
+    .Rating-page .rating-page-card-sec{
+        position: relative;
+         
+        left: 10px;
+    
+    }
+   
+
+}
+.card-profile-section{
+ 
+    margin-top: 8px;
+}
+.card-profile-section .img-profile-1{
+    border-radius: 50%;
+}
+.card-profile-section .img{
+    border-radius: 50%;
+    margin-left: -14px;
+   
+}
+.card-profile-section p{
+    background-color: red;
+    margin-left: -12px;
+    border-radius: 50%;
+    padding: 7px 2px;
+    color: white;
+    font-weight: bolder;
+   
+   
+}
+.star{
+    margin-top: 8px;
+    font-weight: bold;
+    color: black;
+    font-size: 17px;
+}
+.star i{
+    color: goldenrod;
+    font-size: 18px;
+}
+#rating-page-container .card-title{
+font-size: 16px !important;
+font-weight: bolder;
+
+}
+#rating-page-para-sec{
+    margin-top: 10px;
+}
+.gift-icon-1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: rgba(255, 0, 0, 0.137);
+   
+}
+.gift-icon-1 i{
+    font-size: 25px;
+    color: #cd2c22;
+   
+}
+
+
+.gift-icon-2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: rgba(0, 0, 255, 0.164);
+   
+}
+.gift-icon-2 i{
+    font-size: 25px;
+    color: blue;
+   
+}
+.gift-icon-3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color:rgba(0, 128, 0, 0.247);
+   
+}
+.gift-icon-3 i{
+    font-size: 25px;
+    color: green;
+   
+}
+.gift-icon-4{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    margin-top: 10px;
+    background-color: #fff3cd;
+   
+}
+.gift-icon-4 i{
+    font-size: 25px;
+    color: gold;
+   
+}
+@media only screen and (min-width:768px){
+    #rating-page-content-sec{
+        margin-top:110px !important;
+    }
+}
+/* section 4 end */
+
+/* section 5 start */
+
+.video-section{
+height: 85vh;
+background-image: url(/images/yt-video-image.jpg);
+background-size: cover;
+background-repeat: no-repeat;
+background-position: center;
+filter: brightness(99%);
+}
+
+.play-btn{
+    background-color: white;
+    height: 90px;
+    width: 90px;
+    border-radius: 50%;
+    filter: brightness(100%);
+}
+.play-btn i{
+    font-size: 50px;
+    color: #cd2c22;
+}
+
+/* section 5 end */
+/* section 6 start */
+
+.reviews-sec {
+    background-color: #f7f9fc;
+}
+.reviews-sec h4{
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+.reviews-sec img{
+    border-radius: 10px ;
+   
+}
+.reviews-sec .card-title{
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+}
+.reviews-sec .star-icon{
+    margin-top: -20px;
+}
+.reviews-sec  i{
+color: goldenrod;
+font-size: 12px;
+
+}
+
+.reviews-sec .States{
+  margin-top: -6px;
+  font-size: 13px;
+  font-family: sans-serif;
+  letter-spacing: 0.2px;
+  color: grey;
+}
+.reviews-sec .card-text{
+    color: grey;
+    font-size: 14px;
+    margin-top: -10px;
+    letter-spacing: 0.3px;
+}
+.reviews-sec .card-text-1{
+    color: grey;
+
+}
+/* section 6 end */
+
+/* section 7 start */
+
+.join-Geotrip{
+    background-color: #cd2c22;
+    height: 150px;
+  
+}
+@media only screen and (max-width:767px){
+    .join-Geotrip{
+        background-color: #cd2c22;
+        height: 250px;
+}
+#join-Geotrip-form{
+    margin: auto;
+}
+#join-Geotrip-form{
+    background-color: white;
+    border-radius: 10px;
+}
+.join-Geotrip button{
+    background-color: #212529;
+    color: white;
+    margin: 10px 0px 10px 2px !important;
+    padding: 10px 25px;
+    border-radius: 8px !important;
+    border: none;
+    font-weight: 540;
+
+   
+}
+}
+.join-Geotrip h4{
+    font-weight: bolder;
+
+}
+@media only screen and (min-width:767px){
+#join-Geotrip-form{
+    background-color: white;
+    border-radius: 10px;
+}
+.join-Geotrip button{
+    background-color: #212529;
+    color: white;
+    margin: 10px 0px 10px 2px !important;
+    padding: 10px 25px;
+    border-radius: 8px !important;
+    border: none;
+    font-weight: 540;
+
+   
+}
+}
+@media only screen and (max-width:767px){
+  
+    }
+.join-Geotrip button:active{
+    border: none;
+    background-color: #cd2c22;
+}
+.input-group input{
+   border: none;
+   
+    
+}
+.input-group input::placeholder{
+    font-size: 14px;
+    color: grey;
+}
+.input-group input:focus{
+    outline: none;
+    box-shadow: none;
+}
+
+/* section 7 end */
+/* footer-section */
+
+.footer-section li, p{
+    font-size: 13px;
+    color: #5d6f7d;
+}
+.footer-section .footer-heading{
+
+    font-size: 15px !important;
+    color: #003a75 !important;
+    font-weight: bolder;
+
+}
+.footer-section li:hover{
+    color: #be1a0f;
+    text-decoration: underline;
+}
+
+
+/* footer-section-end */

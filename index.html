@@ -16,7 +16,7 @@
   <body>
    <!-- navbar section -->
     
-   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top"  >
     <div class="container">
       <a class="navbar-brand" href="#"><img src="images/nav-logo.png" width="135vw" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -101,11 +101,12 @@
               " height="20px" alt=""></a>
           </li>
           <li class="nav-item">
-            <button type="button" class="btn btn-danger btn-lg"><i class="fa-regular fa-circle-user me-2"></i>Sign in / Register</button>
+            <button type="button" class="btn btn-danger btn-lg"><i class="bi bi-person-circle pe-2"></i>Sign in / Register</button>
           </li>
         </ul>
       </div>
     </div>
+    
   </nav>
   <!-- navbar section end -->
   <!-- hero section -->
@@ -133,15 +134,15 @@
     </div>
   </div>
   <div class="col-md col-sm-8 col-8 mb-2 ">
-    <select class="form-select form-select-sm d-inline" aria-label="Small select example">
-      <option selected>1 Adults</option>
+    <select class="form-select form-select-sm d-inline" id="hero-section-adults-member" aria-label="Small select example">
+      <option selected >1 Adults</option>
       <option value="1">One</option>
       <option value="2">Two</option>
       <option value="3">Three</option>
     </select>
   </div>
   <div class="col-md col-sm-9 col-9 mb-2 ">
-    <select class="form-select form-select-sm d-inline"  aria-label="Small select example">
+    <select class="form-select form-select-sm d-inline" id="hero-section-premium-member"  aria-label="Small select example">
       <option selected> Premium Econnomy</option>
       <option value="1">One</option>
       <option value="2">Two</option>
@@ -176,13 +177,13 @@
 </div>
 
 <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-2" id="date">
-  <input type="datetime-local" name="entry_date" id="" placeholder="Depature date" value="Depature date" class="form-control pt-3 pb-3">
+  <input type="datetime-local" name="entry_date" placeholder="Depature date" value="Depature date" class="form-control pt-3 pb-3">
 </div>
 <div class="col-lg-2 col-md-6 col-sm-6 col-12 mb-3" id="date">
-  <input type="datetime-local" name="entry_date" id="" placeholder="Depature date" value="Depature date" class="form-control pt-3 pb-3">
+  <input type="datetime-local" name="entry_date" placeholder="Depature date" value="Depature date" class="form-control pt-3 pb-3">
 </div>
 <div class="col-lg-2 col-12 d-grid mb-2" id="hero-search-btn">
-  <button type="button" class="btn btn-danger btn-lg pt-3 pb-3 ps-lg-5 pe-lg-5">Search</button>
+  <button type="button" class="btn btn-danger btn-lg pt-3 pb-3 ps-lg-3 pe-lg-3"><i class="bi bi-search pe-2"></i>Search</button>
 </div>
 
 
@@ -207,7 +208,7 @@
 <!-- sec-1 -->
   <section class="sec-1">
 
-<div class="container mt-5 mb-5 pb-3">
+<div class="container mt-lg-5 mt-md-4 mt-3 mb-5 pb-3">
 
   <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 mt-5">
     <div class="col">
@@ -453,6 +454,322 @@
   
 </section>
 <!-- sec-3 end -->
+
+
+<!-- section 4 start -->
+
+<section class="Rating-page"> 
+
+  <div class="container mb-5 pb-4" id="rating-page-container">
+
+    <div class="row" id="rating-page-img-row ">
+      
+      <div class="col-12 col-lg-6" >
+        <!--  -->
+        
+          <!--  -->
+          <div class="rating-page-card-sec">
+            <div class="card mb-3" style="width: 14rem;">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-8">
+                <p class="card-text text-start">Client</p>
+              </div>
+              <div class="col-4">
+                <p class="card-text text-end">Rating</p>
+              </div>
+                </div>
+              <div class="row">
+              <div class="col-8 card-profile-section text-start">
+                <img src="images/Rating-page-profile-1.jpg" class="img-profile-1"  height="30px" width="30px" alt="">
+                <img src="images/Rating-page-profile-2.jpg" class="img" height="30px" width="30px" alt="">
+                <img src="images/Rating-page-profile-3.jpg" class="img" height="30px" width="30px" alt="">
+                <img src="images/Rating-page-profile-4.jpg" class="img" height="30px" width="30px" alt="">
+               <p class="d-inline">1k+</p>
+              </div>
+              <div class="col-4">
+                <p class="card-text star">4.5 <i class="bi bi-star-fill"></i></p>
+              </div>
+            
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="rating-page-img-sec text-center">
+       <img src="images/Section-4-main-rating .png" class="img-fluid h-100"  alt="">
+     </div>
+      </div>
+      <div class="col-12 col-lg-6" id="rating-page-content-sec" >
+      <div class="row">
+<div class="col-12 col-sm-6">
+<div class="gift-icon-1 "><i class="bi bi-gift-fill"></i></div>
+  <h4 class="text-start card-title mt-3">Get Superb Deals</h4>
+  <p class="text-start card-text" id="rating-page-para-sec">Just fill up a page with draft copy about the client's business and they will actually read it and comment on it. they will be drwn to it,firecely.Do it wrong way.</p>
+</div>
+
+<div class="col-12 col-sm-6" >
+<div class="gift-icon-2 " ><i class="bi bi-gift-fill"></i></div>
+  <h4 class="text-start card-title mt-3">100% Transparency Price</h4>
+  <p class="text-start  card-text" id="rating-page-para-sec">Just fill up a page with draft copy about the client's business and they will actually read it and comment on it. they will be drwn to it,firecely.Do it wrong way.</p>
+</div>
+
+      </div>
+
+      <div class="row ">
+        <div class="col-12 col-sm-6">
+        <div class="gift-icon-3 "><i class="bi bi-gift-fill"></i></div>
+          <h4 class="text-start card-title mt-3">Pure Trusted and Free</h4>
+          <p class="text-start card-text" id="rating-page-para-sec">Just fill up a page with draft copy about the client's business and they will actually read it and comment on it. they will be drwn to it,firecely.Do it wrong way.</p>
+        </div>
+        
+        <div class="col-12 col-sm-6">
+        <div class="gift-icon-4 "><i class="bi bi-gift-fill"></i></div>
+          <h4 class="text-start card-title mt-3">Travel With Confidence</h4>
+          <p class="text-start  card-text" id="rating-page-para-sec">Just fill up a page with draft copy about the client's business and they will actually read it and comment on it. they will be drwn to it,firecely.Do it wrong way.</p>
+        </div>
+        
+              </div>
+
+      </div>
+    </div>
+    
+  </div>
+    
+</section>
+
+<!-- sec-4 end -->
+
+
+
+<!-- section 5 start -->
+
+<section class="video-section  d-flex justify-content-center align-items-center ">
+
+  <div class="play-btn  d-flex justify-content-center align-items-center"><a href="#"><i class="bi bi-play-fill"></i></a></div>
+  
+  
+  
+  
+  
+  
+</section>
+
+<!-- section 5 end -->
+<!-- sec-6 -->
+ <section class="reviews-sec">
+
+<div class="container pb-5">
+<div class="row">
+  <div class="col-12 ">
+
+    <h4 class="text-center mt-5 pt-5 ">Loving Reviews By Our Customer</h4>
+    <p class="card-text-1 text-center mb-5">Cicero famously orated against his political opponent Lucius Sergius Catilina.</p>
+  </div>
+</div>
+  <!--  -->
+  <div class="row row-cols-1 row-cols-lg-3 row-cols-sm-2 g-4 justify-content-center">
+   
+      <div class="col">
+        <div class="card h-100">
+          <div class="row"><div class="col-3">
+          <img src="images/Rating-page-profile-1.jpg" class="img-fluid m-3" width="80px"   alt="...">
+        </div>
+      <div class="col-8">
+        <h5 class="card-title">Card title</h5>
+        <p class="States">United States</p>
+        <div class="star-icon">
+        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+      </div>
+      </div>
+          <div class="card-body">
+            <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos est suscipit mollitia consequatur laudantium adipisci rem omnis ea pariatur sunt.</p>
+          </div>
+        </div>
+      </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="row"><div class="col-3">
+        <img src="images/Rating-page-profile-2.jpg" class="img-fluid m-3" width="80px"   alt="...">
+      </div>
+    <div class="col-8">
+      <h5 class="card-title">Card title</h5>
+      <p class="States">United States</p>
+      <div class="star-icon">
+      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+    </div>
+    </div>
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos est suscipit mollitia consequatur laudantium adipisci rem omnis ea pariatur sunt.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="row"><div class="col-3">
+        <img src="images/Rating-page-profile-3.jpg" class="img-fluid m-3" width="80px"   alt="...">
+      </div>
+    <div class="col-8">
+      <h5 class="card-title">Card title</h5>
+      <p class="States">United States</p>
+      <div class="star-icon">
+      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+    </div>
+    </div>
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos est suscipit mollitia consequatur laudantium adipisci rem omnis ea pariatur sunt.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="row"><div class="col-3">
+        <img src="images/Rating-page-profile-4.jpg" class="img-fluid m-3" width="80px"   alt="...">
+      </div>
+    <div class="col-8">
+      <h5 class="card-title">Card title</h5>
+      <p class="States">United States</p>
+      <div class="star-icon">
+      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+    </div>
+    </div>
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos est suscipit mollitia consequatur laudantium adipisci rem omnis ea pariatur sunt.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100">
+        <div class="row"><div class="col-3">
+        <img src="images/Rating-page-profile-5.jpg" class="img-fluid m-3" width="80px"   alt="...">
+      </div>
+    <div class="col-8">
+      <h5 class="card-title">Card title</h5>
+      <p class="States">United States</p>
+      <div class="star-icon">
+      <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i></div>
+    </div>
+    </div>
+        <div class="card-body">
+          <p class="card-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dignissimos est suscipit mollitia consequatur laudantium adipisci rem omnis ea pariatur sunt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--  -->
+</div>
+
+ </section>
+
+
+ <!-- sec-6-end -->
+
+
+<!-- section 7 -->
+<section class="join-Geotrip d-flex align-items-center mt-5 mb-5">
+<div class="container ">
+
+  <div class="row  justify-content-between">
+
+    <div class="col-lg-4 col-md-6 col-12 text-center text-sm-start"><h4 class=" text-white">Join our Newsletter To Keep Up To Date With Us!</h4></div>
+    
+  <div class="col-lg-5 col-md-6  d-none d-md-block" id="join-Geotrip-form">
+    <div class="input-group ">
+      <input type="text" class="form-control py-4" placeholder="Enter Your Mail" aria-label="Recipient's username" aria-describedby="button-addon2">
+      <button  type="button" id="button-addon2">Submit <i class="bi bi-graph-up-arrow ps-2"></i></button>
+    </div>
+    
+  </div>
+  <div class=" col-10 d-block d-md-none mt-2" id="join-Geotrip-form">
+    <div class="row">
+    <div class="input-group">
+      <div class="col-12">
+      <input type="text" class="form-control py-2 mt-3" placeholder="Enter Your Mail" aria-label="Recipient's username" aria-describedby="button-addon2"></div>
+      <div class="col-12 d-grid mt-2 mb-2" >
+      <button  type="button " class="py-2" id="button-addon2">Submit <i class="bi bi-graph-up-arrow ps-2"></i></button>
+    </div></div>
+    </div>
+    
+  </div>
+  
+</div>
+</section>
+<!-- section 7 end -->
+
+
+<!--  footer-section -->
+<section class="footer-section">
+<div class="container">
+
+  <div class="row d-flex justify-content-around mb-5 row-cols-lg-5 row-cols-md-3 row-cols-1">
+
+    <div class="col">
+     <div class="footer-logo">
+      <img src="images/nav-logo.png" width="150px" alt="">
+     </div>
+     <p class="mt-4">We make your dream more beautiful & enjoyful with lots of happiness.</p>
+    </div>
+    <div class="col ">
+      <p class="footer-heading">The Navigation</p>
+      <ul class="list-unstyled">
+<li class="mt-3"> Talent Marketplace</li>
+<li class="mt-3">Payroll Services</li>
+<li class="mt-3">Direct Contracts</li>
+<li class="mt-3">Hire Worldwide</li>
+<li class="mt-3">Hire in the USA</li>
+<li class="mt-3">How to Hire</li>
+      </ul>
+    </div>
+    
+    <div class="col">
+      <p class="footer-heading">Our Resources</p>
+      <ul class="list-unstyled">
+<li class="mt-3">  Free Business tools</li>
+<li class="mt-3">Affiliate Program</li>
+<li class="mt-3">Success Stories</li>
+<li class="mt-3">Upwork Reviews</li>
+<li class="mt-3">Resources</li>
+<li class="mt-3">Help & Support</li>
+      </ul>
+    </div>
+    
+<div class="col">
+  <p class="footer-heading">The Company</p>
+  <ul class="list-unstyled">
+<li class="mt-3">  About Us</li>
+<li class="mt-3">Leadership</li>
+<li class="mt-3">Contact Us</li>
+<li class="mt-3">Investor Relations</li>
+<li class="mt-3">Trust, Safety & Security</li>
+</ul>
+</div>
+<div class="col">
+  <p class="footer-heading">The Company</p>
+  <ul class="list-unstyled">
+<li class="mt-3">  About Us</li>
+<li class="mt-3">Leadership</li>
+<li class="mt-3">Contact Us</li>
+<li class="mt-3">Investor Relations</li>
+<li class="mt-3">Trust, Safety & Security</li>
+</ul>
+</div>
+</div>
+</div></section>
+<hr>
+<section class="footer-section-2">
+  <div class="container">
+   <div class="row d-flex justify-content-between row-cols-1 row-cols-md-2">
+    <div class="col">
+      <p >© 2023 GeoTrip Design by Themezhub.</p>
+    </div>
+    <div class="col"><p class="text-md-end text-dark">Terms of services
+   <span class="ms-2"> Privacy Policies</span>
+      <span class="ms-2">Cookies</span></p></div>
+   </div> 
+  
+</div>
+</section>
+<!-- footer-section end -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>
 </html>
