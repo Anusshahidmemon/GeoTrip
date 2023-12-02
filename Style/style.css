@@ -547,7 +547,7 @@ font-weight: bolder;
 
 .video-section{
 height: 85vh;
-background-image: url(/images/yt-video-image.jpg);
+background-image: url(../images/yt-video-image.jpg);
 background-size: cover;
 background-repeat: no-repeat;
 background-position: center;
