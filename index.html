@@ -16,7 +16,7 @@
   <body>
    <!-- navbar section -->
     
-   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top"  >
+   <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top d-none d-lg-block"  >
     <div class="container">
       <a class="navbar-brand" href="#"><img src="images/nav-logo.png" width="135vw" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -109,6 +109,127 @@
     
   </nav>
   <!-- navbar section end -->
+
+
+
+<!-- navbar 2 md screen -->
+
+
+
+
+<nav class="navbar bg-body-tertiary fixed-top d-block d-lg-none">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="images/nav-logo.png" width="135vw" alt=""></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Travel WIth GeoTrip</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Home
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Home Version 1</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Home Version 2</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Home Version 3</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Home Version 4</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Home Version 5</a></li>
+              <li><hr class="dropdown-divider"></li> 
+              <li><a class="dropdown-item" href="#">Home Version 6</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle active " href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Listing
+            </a>
+            <ul class="dropdown-menu ">
+                <li><a class="dropdown-item  " href="#">Hotel</a></li>
+                <li><hr class="dropdown-divider"></li> 
+                <li><a class="dropdown-item" href="#">Flight</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Booking page</a></li>
+                <li><hr class="dropdown-divider"></li> 
+                <li><a class="dropdown-item" href="#">Join With GeoTrip</a></li>
+                <li><hr class="dropdown-divider"></li> 
+                <li><a class="dropdown-item" href="#">Add Listing</a></li>
+                <li><hr class="dropdown-divider"></li> 
+                <li><a class="dropdown-item" href="#">Compare Listing</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Link
+            </a>
+            <ul class="dropdown-menu ">
+              <li><a class="dropdown-item" href="#">Action</a></li>
+              <li><a class="dropdown-item" href="#">Another action</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#">Something else here</a></li>
+            </ul>
+          </li>
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+             Menu
+            </a>
+            <ul class="dropdown-menu meun">
+               
+            
+              <li><a class="dropdown-item cards" href="#"><div class="row"><div class="col-3"><i class="bi bi-airplane-fill p-1" id="home-flight"></i></div><div class="col-9"><p>HOME FLIGHT <br><span class="flight-description">Beautiful Place for Stays</span></p></div></div></a></li>
+              
+              <li><a class="dropdown-item cards" href="#"><div class="row"><div class="col-3"><i class="bi bi-airplane-fill p-1" id="home-flight"></i></div><div class="col-9"><p>HOME FLIGHT <br><span class="flight-description">Beautiful Place for Stays</span></p></div></div></a></li>
+              
+              <li><a class="dropdown-item cards" href="#"><div class="row"><div class="col-3"><i class="bi bi-airplane-fill p-1" id="home-flight"></i></div><div class="col-9"><p>HOME FLIGHT <br><span class="flight-description">Beautiful Place for Stays</span></p></div></div></a></li>
+              
+              <li><a class="dropdown-item cards" href="#"><div class="row"><div class="col-3"><i class="bi bi-airplane-fill p-1" id="home-flight"></i></div><div class="col-9"><p>HOME FLIGHT <br><span class="flight-description">Beautiful Place for Stays</span></p></div></div></a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Docs</a>
+          </li>
+          <li class="nav-item">
+            <button type="button" class="btn btn-danger btn-lg"><i class="bi bi-person-circle pe-2"></i>Sign in / Register</button>
+          </li>
+        </ul>
+      
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- navbar 2 md screen end -->
   <!-- hero section -->
   
   <div class="container-fluid">
@@ -707,6 +828,7 @@
       <img src="images/nav-logo.png" width="150px" alt="">
      </div>
      <p class="mt-4">We make your dream more beautiful & enjoyful with lots of happiness.</p>
+     <div class="footer-icons my-3 "><i class="bi bi-facebook me-2"></i><i class="bi bi-linkedin me-2"></i><i class="bi bi-twitter me-2"></i><i class="bi bi-browser-chrome me-2"></i></div>
     </div>
     <div class="col ">
       <p class="footer-heading">The Navigation</p>
@@ -743,13 +865,13 @@
 </ul>
 </div>
 <div class="col">
-  <p class="footer-heading">The Company</p>
+  <p class="footer-heading">Payment Methods</p>
   <ul class="list-unstyled">
-<li class="mt-3">  About Us</li>
-<li class="mt-3">Leadership</li>
-<li class="mt-3">Contact Us</li>
-<li class="mt-3">Investor Relations</li>
-<li class="mt-3">Trust, Safety & Security</li>
+<li class="mt-3"><img src="images/Apple Pay -footer-img.jpg" width="50px" class="apple-pay"  alt=""> <img src="images/G-pay.png" width="46px" alt=""> <img src="images/visa-footer-img.jpg" width="50px
+  " alt=""> </li>
+<li class="mt-3 sub-heading text-dark">Our Partners</li>
+<li class="mt-3"><img src="images/Partner-img-goibibo.com.jpg" width="80px" alt=""> <img src="images/trip-advisor.jpg" width="150px" alt=""></li>
+
 </ul>
 </div>
 </div>
